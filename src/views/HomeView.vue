@@ -2,7 +2,7 @@
   <q-page>
     <!-- Banner Section -->
     <div>
-      <q-parallax src="https://cdn.quasar.dev/img/parallax2.jpg" >
+      <q-parallax src="https://cdn.quasar.dev/img/parallax2.jpg">
         <div class="custom_width row">
           <div class="col-12 col-md-5 banner_content flex flex-center">
             Let Us Help You & Your Family To Maintain The Health
@@ -17,13 +17,13 @@
     </div>
 
     <!-- About us -->
-    <div class="container q-mt-md row">
+    <div class="container q-mt-md row" style=" min-height: fit-content">
       <div class="col-12 col-md-6 col-lg-6 flex flex-center q-pa-md info_right">
         2022 marked 10 years delivering film and television production
         physiotherapy, osteopathy, on-set massage and health services to
         productions large and small
       </div>
-      <div class="col-12 col-md-6 col-lg-6 flex flex-center q-pa-md info_left">
+      <div class="col-12 col-md-6 col-lg-6 flex flex-center q-pa-md info_left gt-sm">
         The Film Physios exists to keep productions productive. All our services
         can be delivered on set, on location, on call & in our on the lot
         clinics.
@@ -35,6 +35,69 @@
         We operate across studios large and small, from Pinewood, Shepperton,
         Warner Bros Leavesden, Longcross and Sky Elstree to independent
         facilities across London and the South east
+      </div>
+    </div>
+
+    <!-- Our Components -->
+    <div class="q-mt-md bg-red q-px-md">
+      <h4 class="text-center">Our Services</h4>
+      <div class="row  ">
+        <div class="col-12 col-md-4">
+          <q-card class="my-card">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+            <q-card-section>
+              <div class="text-h6">Our Changing Planet</div>
+              <div class="text-subtitle2">by John Doe</div>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              {{ lorem }}
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-12 col-md-4">
+          <q-card class="my-card">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+            <q-card-section>
+              <div class="text-h6">Our Changing Planet</div>
+              <div class="text-subtitle2">by John Doe</div>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              {{ lorem }}
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-12 col-md-4">
+          <q-card class="my-card">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+            <q-card-section>
+              <div class="text-h6">Our Changing Planet</div>
+              <div class="text-subtitle2">by John Doe</div>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              {{ lorem }}
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-3">
+          <q-card class="my-card">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+            <q-card-section>
+              <div class="text-h6">Our Changing Planet</div>
+              <div class="text-subtitle2">by John Doe</div>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              {{ lorem }}
+            </q-card-section>
+          </q-card>
+        </div>
       </div>
     </div>
   </q-page>
@@ -51,6 +114,7 @@ export default {
   height: 300px;
   width: 100%;
 }
+
 /* Banner right Content */
 .border_card {
   width: 560px;
@@ -62,6 +126,7 @@ export default {
   color: white;
   cursor: pointer;
 }
+
 .border_card:hover {
   background-color: white;
   color: red;
@@ -72,12 +137,16 @@ export default {
 .container {
   width: 80%;
   margin: 0 auto;
-  height: 355px;
 }
+
 /* --Info Page Content Management */
 .info_right {
   font-size: 30px;
   line-height: 35px;
 }
-
+/* Card Width */
+.my_card{
+  width: 100%;
+  max-width: 250px;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="relative-position ">
-    <q-layout view="lHh Lpr lFf" class="relative-position bg-red">
+    <q-layout view="lHh Lpr lFf" class="relative-position">
       <q-header elevated class="glossy">
         <q-toolbar>
           <!-- Logo  
@@ -59,8 +59,9 @@
         <HomeView />
       </q-page-container>
     </q-layout>
-    <div class="absolute-center q-mt-xl bg-white" style="left: 2%;">
-      <q-icon name="facebook" class="text-h3"/>
+    <div class="fixed-center column  icon_position" >
+      <q-icon name="facebook" class="text-h3 icon_color q-mb-sm"/>
+      <q-icon name="facebook" class="text-h3 icon_color"/>
     </div>
   </div>
 </template>
@@ -96,6 +97,21 @@ export default {
   padding: 0 23px;
   color: white;
 }
+/* Social Media Icon Position*/
+.icon_position{
+  left: 3%;
+  cursor: pointer;
+}
+.icon_color{
+  background-color:white;
+}
+.icon_color:hover{
+  background-color: brown;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s ease-in;
+
+}
 /* --Icon Cover */
 body.screen--xs {
   /* --Header  */
@@ -111,6 +127,11 @@ body.screen--xs {
   .info_left {
     font-size: 16px;
   }
+
+  /* Social Media Icon Position*/
+.icon_position{
+  display: none;
+}
 }
 body.screen--sm {
   /* --Header  */
@@ -126,6 +147,11 @@ body.screen--sm {
   .info_left {
     font-size: 16px;
   }
+
+  /* Social Media Icon Position*/
+.icon_position{
+  left: 3%;
+}
 }
 body.screen--md {
   /* --Header  */
@@ -144,6 +170,12 @@ body.screen--md {
   .info_left {
     font-size: 18px;
   }
+
+  /* Social Media Icon Position*/
+.icon_position{
+  left: 3%;
+
+}
 }
 body.screen--lg {
   /* --Header  */
@@ -162,6 +194,10 @@ body.screen--lg {
   .info_left {
     font-size: 20px;
   }
+  .icon_position{
+  left: 1%;
+  cursor: pointer;
+}
 }
 body.screen--xl {
   /* --Header  */
@@ -180,5 +216,9 @@ body.screen--xl {
   .info_left {
     font-size: 22px;
   }
+  .icon_position{
+  left: 1%;
+  cursor: pointer;
+}
 }
 </style>
