@@ -41,8 +41,8 @@
     <!-- Our Components -->
     <div class="q-mt-md bg-red q-px-md">
       <h4 class="text-center">Our Services</h4>
-      <div class="row  ">
-        <div class="col-12 col-md-4">
+      <div class="row q-col-gutter-md ">
+        <div class="col-12 col-md-3">
           <q-card class="my-card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
@@ -56,7 +56,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-3">
           <q-card class="my-card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
@@ -70,7 +70,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-3">
           <q-card class="my-card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
@@ -84,7 +84,49 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-3">
+          <q-card class="my-card">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+            <q-card-section>
+              <div class="text-h6">Our Changing Planet</div>
+              <div class="text-subtitle2">by John Doe</div>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              {{ lorem }}
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-12 col-md-3">
+          <q-card class="my-card">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+            <q-card-section>
+              <div class="text-h6">Our Changing Planet</div>
+              <div class="text-subtitle2">by John Doe</div>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              {{ lorem }}
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-12 col-md-3">
+          <q-card class="my-card">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+            <q-card-section>
+              <div class="text-h6">Our Changing Planet</div>
+              <div class="text-subtitle2">by John Doe</div>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              {{ lorem }}
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-12 col-md-3">
           <q-card class="my-card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
