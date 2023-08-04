@@ -58,6 +58,13 @@
       <q-page-container>
         <HomeView />
       </q-page-container>
+      <!-- Footer -->
+      <q-footer reveal  class="footer-width glossy">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 text-center">Abhishek</div>
+          <div class="col-xs-12 col-md-6 text-center"></div>
+        </div>
+      </q-footer>
     </q-layout>
     <div class="fixed-center column  icon_position" >
       <q-icon name="facebook" class="text-h3 icon_color q-mb-sm"/>
@@ -112,6 +119,14 @@ export default {
   transition: all 0.5s ease-in;
 
 }
+/* Footer Width */
+.footer-width {
+  width: 100%;
+  height: 100px;
+}
+.footer-center{
+  text-align: center;
+}
 /* --Icon Cover */
 body.screen--xs {
   /* --Header  */
@@ -132,6 +147,10 @@ body.screen--xs {
 .icon_position{
   display: none;
 }
+/* Footer */
+.footer-center{
+  text-align: center;
+}
 }
 body.screen--sm {
   /* --Header  */
@@ -150,7 +169,7 @@ body.screen--sm {
 
   /* Social Media Icon Position*/
 .icon_position{
-  left: 3%;
+  left: 2%;
 }
 }
 body.screen--md {
@@ -173,7 +192,7 @@ body.screen--md {
 
   /* Social Media Icon Position*/
 .icon_position{
-  left: 3%;
+  left: 1%;
 
 }
 }
@@ -195,7 +214,7 @@ body.screen--lg {
     font-size: 20px;
   }
   .icon_position{
-  left: 1%;
+  left:1%;
   cursor: pointer;
 }
 }

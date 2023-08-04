@@ -39,71 +39,79 @@
     </div>
 
     <!-- Our Components -->
-    <div class="q-mt-md bg-red q-px-md">
+    <div class="q-mt-md q-px-md">
       <h4 class="text-center">Our Services</h4>
-      <div class="row q-col-gutter-md ">
-        <div class="col-12 col-md-3">
+      <div class="row justify-center q-col-gutter-md ">
+        <div class=" col-md-4 col-lg-4 ">
           <q-card class="my_card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg" class="img_transform">
 
             <div class="content_display_card">
-              Abhisehk
+              <h5>Find Out More...</h5>
             </div>
           </q-card>
         </div>
-        <div class="col-12 col-md-3">
+        <div class=" col-md-4 col-lg-4">
           <q-card class="my_card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg" class="img_transform">
 
             <div class="content_display_card">
-              Abhisehk
+              <h5>Find Out More...</h5>
             </div>
           </q-card>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-md-4 col-lg-4">
           <q-card class="my_card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg" class="img_transform">
 
             <div class="content_display_card">
-              Abhisehk
+              <h5>Find Out More...</h5>
             </div>
           </q-card>
         </div>
-        <div class="col-12 col-md-3">
+        <div class=" col-md-4 col-lg-4">
           <q-card class="my_card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg" class="img_transform">
 
             <div class="content_display_card">
-              Abhisehk
+              <h5>Find Out More...</h5>
             </div>
           </q-card>
         </div>
-        <div class="col-12 col-md-3">
+        <div class=" col-md-4 col-lg-4">
           <q-card class="my_card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg" class="img_transform">
 
             <div class="content_display_card">
-              Abhisehk
+              <h5>Find Out More...</h5>
             </div>
           </q-card>
         </div>
-        <div class="col-12 col-md-3">
+        <div class=" col-md-4 col-lg-4">
           <q-card class="my_card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+            <img src="https://cdn.quasar.dev/img/parallax2.jpg" class="img_transform">
+
 
             <div class="content_display_card">
-              <h1 style="z-index: 1;">Abhishek</h1>
+              <h5>Find Out More...</h5>
             </div>
           </q-card>
         </div>
-        <div class="col-12 col-md-3">
-          <q-card class="my_card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+      </div>
+    </div>
 
-            <div class="content_display_card">
-              Abhisehk
-            </div>
-          </q-card>
+    <!--Testimonals -->
+    <div class="q-my-md q-px-md">
+      <h4 class="text-center">Our Clients</h4>
+      <div class="row justify-center">
+        <div class="col-12">
+          <q-carousel animated  v-model="slide"  infinite :autoplay="autoplay"
+            transition-prev="slide-right" transition-next="slide-left" >
+            <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
+            <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
+            <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
+            <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+          </q-carousel>
         </div>
       </div>
     </div>
@@ -111,8 +119,15 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 export default {
   name: "HomeView",
+  setup(){
+    return{
+      slide : ref(1),
+      autoplay:ref(true)
+    }
+  }
 };
 </script>
 <style>
@@ -151,19 +166,19 @@ export default {
   font-size: 30px;
   line-height: 35px;
 }
+
 /* Card Width */
-.my_card{
+/* When you want to have a hover effect on the image and you need to transform the image by using scale property 
+then you need to transform the image not the outer most div */
+
+.my_card {
   width: 100%;
   max-width: 550px;
-  
-  
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.my_card:hover .content_display_card{
-  
-  opacity: 0.5;
-}
-.content_display_card{
+.content_display_card {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -176,6 +191,17 @@ export default {
   color: white;
   opacity: 0;
 }
-/* --onhover */
 
+/* --onhover */
+.my_card:hover .img_transform {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.my_card:hover .content_display_card {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.9;
+}
+
+/* Card Width */
 </style>
