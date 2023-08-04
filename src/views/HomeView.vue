@@ -43,101 +43,66 @@
       <h4 class="text-center">Our Services</h4>
       <div class="row q-col-gutter-md ">
         <div class="col-12 col-md-3">
-          <q-card class="my-card">
+          <q-card class="my_card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
-            <q-card-section>
-              <div class="text-h6">Our Changing Planet</div>
-              <div class="text-subtitle2">by John Doe</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{ lorem }}
-            </q-card-section>
+            <div class="content_display_card">
+              Abhisehk
+            </div>
           </q-card>
         </div>
         <div class="col-12 col-md-3">
-          <q-card class="my-card">
+          <q-card class="my_card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
-            <q-card-section>
-              <div class="text-h6">Our Changing Planet</div>
-              <div class="text-subtitle2">by John Doe</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{ lorem }}
-            </q-card-section>
+            <div class="content_display_card">
+              Abhisehk
+            </div>
           </q-card>
         </div>
         <div class="col-12 col-md-3">
-          <q-card class="my-card">
+          <q-card class="my_card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
-            <q-card-section>
-              <div class="text-h6">Our Changing Planet</div>
-              <div class="text-subtitle2">by John Doe</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{ lorem }}
-            </q-card-section>
+            <div class="content_display_card">
+              Abhisehk
+            </div>
           </q-card>
         </div>
         <div class="col-12 col-md-3">
-          <q-card class="my-card">
+          <q-card class="my_card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
-            <q-card-section>
-              <div class="text-h6">Our Changing Planet</div>
-              <div class="text-subtitle2">by John Doe</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{ lorem }}
-            </q-card-section>
+            <div class="content_display_card">
+              Abhisehk
+            </div>
           </q-card>
         </div>
         <div class="col-12 col-md-3">
-          <q-card class="my-card">
+          <q-card class="my_card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
-            <q-card-section>
-              <div class="text-h6">Our Changing Planet</div>
-              <div class="text-subtitle2">by John Doe</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{ lorem }}
-            </q-card-section>
+            <div class="content_display_card">
+              Abhisehk
+            </div>
           </q-card>
         </div>
         <div class="col-12 col-md-3">
-          <q-card class="my-card">
+          <q-card class="my_card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
-            <q-card-section>
-              <div class="text-h6">Our Changing Planet</div>
-              <div class="text-subtitle2">by John Doe</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{ lorem }}
-            </q-card-section>
+            <div class="content_display_card">
+              <h1 style="z-index: 1;">Abhishek</h1>
+            </div>
           </q-card>
         </div>
         <div class="col-12 col-md-3">
-          <q-card class="my-card">
+          <q-card class="my_card">
             <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
-            <q-card-section>
-              <div class="text-h6">Our Changing Planet</div>
-              <div class="text-subtitle2">by John Doe</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{ lorem }}
-            </q-card-section>
+            <div class="content_display_card">
+              Abhisehk
+            </div>
           </q-card>
         </div>
       </div>
@@ -189,6 +154,28 @@ export default {
 /* Card Width */
 .my_card{
   width: 100%;
-  max-width: 250px;
+  max-width: 550px;
+  
+  
 }
+
+.my_card:hover .content_display_card{
+  
+  opacity: 0.5;
+}
+.content_display_card{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  height: 100%;
+  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+  color: white;
+  opacity: 0;
+}
+/* --onhover */
+
 </style>
